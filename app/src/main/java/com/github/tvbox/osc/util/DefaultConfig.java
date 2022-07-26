@@ -48,7 +48,7 @@ public class DefaultConfig {
             }
         }
         if (withMy)
-            data.add(0, new MovieSort.SortData("my0", "首页&直播"));
+            data.add(0, new MovieSort.SortData("my0", "首页"));
         Collections.sort(data);
         return data;
     }
