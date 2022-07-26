@@ -77,7 +77,6 @@
 
             <TextView
                 android:id="@+id/play_scale"
-				Android:gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/vs_5"
@@ -91,7 +90,6 @@
 
             <TextView
                 android:id="@+id/play_speed"
-				Android:gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/vs_5"
@@ -167,7 +165,6 @@
 
             <TextView
                 android:id="@+id/play_time_step"
-				Android:gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/vs_5"
