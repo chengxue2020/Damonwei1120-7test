@@ -69,10 +69,10 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/TVBox_Damonwei1120_Release_${{ env.tag }}.apk
+            mv "$file" apk/TVBox_Damonwei1120_${{ env.tag }}_Release.apk
           done
           for file in `find ~ -name "*debug*.apk" -print`; do
-            mv "$file" apk/TVBox_Damonwei1120_Debug_${{ env.tag }}.apk
+            mv "$file" apk/TVBox_Damonwei1120_${{ env.tag }}_Debug.apk
           done
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
@@ -89,7 +89,7 @@ jobs:
           body: ${{ env.commit }}
           files: |
             TVBoxOSC/apk/*
-            TVBoxOSC/Damonwei1120-${{ env.commitS }}-source.zip
+            TVBoxOSC/${{ env.commitS }}-source.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Post To Telegram
