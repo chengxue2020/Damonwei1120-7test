@@ -4,13 +4,15 @@
         <shape>
             <corners android:radius="@dimen/vs_5" />
             <stroke android:width="2mm" android:color="@android:color/white" />
-            <solid android:color="@color/color_353744" />
+            <!--  选中按钮颜色   -->
+            <!--<solid android:color="@color/color_353744" />-->
+            <solid android:color="@color/color_1890FF" />
         </shape>
     </item>
     <item android:state_focused="false">
         <shape>
             <corners android:radius="@dimen/vs_5" />
-            <solid android:color="@color/color_59353744" />
+            <solid android:color="@color/color_BD0CADE2" />
         </shape>
     </item>
 </selector>
